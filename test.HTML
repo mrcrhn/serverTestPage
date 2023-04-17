@@ -1,0 +1,34 @@
+<script>
+    function dodge(){
+    document.getElementById("dodge").style.left = Math.floor(Math.random() * window.innerWidth - 200)
+    document.getElementById("dodge").style.top = Math.floor(Math.random() * window.innerHeight - 200)
+}
+</script>
+
+<body>
+    <div class="testdiv">
+<button id="dodge" onclick="dodge()">
+    CLICK ME
+</button>
+</div>
+</body>
+<style>
+
+    .testdiv{
+        display: flex;
+        justify-content: center;
+    }
+
+    #dodge{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 40%
+    }
+    .html{
+
+        background-color: black;
+    }
+</style>
